@@ -5,11 +5,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Forms</title>
 </head>
 
 <body>
+  <h1>Hire me</h1>
+  <h2>Contact information</h2>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td><strong>Phone</strong></td>
+        <td>+380983261115</td>
+      </tr>
+      <tr>
+        <td><strong>Address</strong></td>
+        <td>Lviv,Ukraine</td>
+      </tr>
+    </tbody>
+  </table>
+  <form action="/index.html" method="get">
+    <fieldset>
+      <legend>Contact form</legend>
 
+      <label>
+        Email:
+        <input type="email" name="email" required /> <br />
+      </label>
+
+
+      <label for="description">Description:</label> <br />
+      <textarea name="description" id="description" cols="30" rows="10"></textarea> <br />
+
+
+      <label>
+        Work type:
+        <select name="workType" id="workType">
+          <option value="fullTime">Full Time</option>
+          <option value="partTime">Part Time</option>
+        </select>
+
+        <input type="submit" value="Hire me" />
+      </label>
+
+    </fieldset>
+  </form>
 </body>
 
 </html>
